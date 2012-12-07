@@ -1,0 +1,24 @@
+While some extensions are maintained by MediaWiki's developers, others were
+written by third-party developers. As a result, many have bugs, and they are not
+all guaranteed to be compatible with each other. Some are unmaintained; not all
+extensions work on all versions of MediaWiki. Use any extension, especially
+those tagged as insecure, at your own risk. When using an extension requiring
+patches to the core MediaWiki code or entries in your database(s), be sure to
+create a back-up of your database and/or the core MediaWiki code, to avoid the
+risk of permanently breaking your wiki.
+
+Install your extension.
+
+    Generally, at the end of the LocalSettings.php file (but above the PHP
+    end-of-code delimiter, "?>", if present), the  following line should be
+    added:
+        require_once( "$IP/extensions/extension_name/extension_name.php" );
+
+        Ensure that required permissions are set for extensions!
+
+
+NAME:    freenodeirc
+CONTACT: factorrf2@yahoo.com        
+
+
+
